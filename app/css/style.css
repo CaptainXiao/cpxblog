@@ -18,3 +18,10 @@ ul,li{list-style: none}
 
 /** 右边内容 **/
 #website-container>.right{width: 620px;background: #ffffff;padding: 40px;float: right;}
+
+/** 文章内容 **/
+.article-container>.header-title>h2{display: block;line-height: 48px;font-weight: 400;color: #555;font-size: 24px;text-align: center;}
+.article-container>.header-title>.infos{display: block;text-align: center;line-height: 36px;}
+.article-container>.header-title>.infos>span{color: #999;}
+.article-container>.header-title>.infos>span.split{margin: 0px 5px;}
+.article-container>.header-title>.infos>span.svalue{color: #555;}
