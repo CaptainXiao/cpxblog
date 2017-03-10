@@ -11,9 +11,10 @@ ul,li{list-style: none}
 /** 左边内容 **/
 #website-container>.left{width: 240px;background: #ffffff;float: left;padding: 5px 0px;}
 #website-container>.left ul li .left-nav{width: 220px;line-height: 34px;font-size: 14px;display: block;text-align: left;font-weight: bold;cursor: pointer;padding: 2px 0px 2px 20px}
+#website-container>.left ul li .left-nav i{margin-right: 5px;}
 #website-container>.left ul li .left-nav:hover{background-color: #f9f9f9;color: #222;}
 #website-container>.left ul li .left-nav.active{color:#1b75bb;background-color: #f9f9f9;}
 #website-container>.left ul li .left-nav.active:hover{color: #1b75bb}
 
 /** 右边内容 **/
-#website-container>.right{width: 660px;background: #ffffff;padding: 20px;float: right;}
+#website-container>.right{width: 620px;background: #ffffff;padding: 40px;float: right;}

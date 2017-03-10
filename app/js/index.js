@@ -19,6 +19,9 @@ angular.module('cpxblog', ['ui.router','ui.bootstrap', 'ngAnimate' , 'topBarModu
         function ($stateProvider, $urlRouterProvider, $locationProvider, $httpProvider) {
             $urlRouterProvider.otherwise('');
             $httpProvider.interceptors.push('sessionRecoverer');
+
+            // 处理URL带#号问题，设置 html5Mode 并在 index.html <head> 标签内设置 <base href="/">
+            $locationProvider.html5Mode(true);
         }
     ])
     .run(['$rootScope', '$http' , '$state', function ($rootScope, $http , $state) {

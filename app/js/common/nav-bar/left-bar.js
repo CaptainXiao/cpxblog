@@ -14,15 +14,18 @@ angular.module('leftBarModule', []).directive('leftBar', function () {
             $scope.leftNavList = [
                 {
                     name:"首页",
-                    view : "home"
+                    view : "home",
+                    style : "fa fa-fw fa-home"
                 },
                 {
                     name: "文章",
-                    view : "article"
+                    view : "article",
+                    style : "fa fa-fw fa-archive"
                 },
                 {
                     name: "管理",
-                    view : "manage"
+                    view : "manage",
+                    style : "fa fa-fw fa-user"
                 }
             ];
 
@@ -35,6 +38,8 @@ angular.module('leftBarModule', []).directive('leftBar', function () {
                         $scope.leftNavList[index]['active'] = true;
                     }
                 }
+            } else {    // 默认设置首页
+                $state.go("home");
             }
 
             // 选择导航

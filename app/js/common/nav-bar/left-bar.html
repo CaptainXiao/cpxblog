@@ -1,5 +1,7 @@
 <ul>
     <li ng-repeat="index in leftNavList">
-        <a class="left-nav {{index.active ? 'active' : ''}}" ng-click="selectNav(index)">{{index.name}}</a>
+        <a class="left-nav {{index.active ? 'active' : ''}}" ng-click="selectNav(index)">
+            <i ng-class="index.style"></i>{{index.name}}
+        </a>
     </li>
 </ul>
