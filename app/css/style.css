@@ -1,0 +1,19 @@
+*{padding: 0px;margin: 0px;}
+
+/** 网站基本样式 **/
+body{font-family: "PingFang SC", "Microsoft YaHei", 'Lato', sans-serif;font-size: 14px;line-height: 2;color: #555;background: #f5f7f9;}
+ul,li{list-style: none}
+#website-container{width: 960px;margin: 0px auto;}
+
+/** 顶部 **/
+#website-container .website-top-bar{width: 100%;height: 96px;background: #ffffff;text-align: center;line-height: 96px;color: #444;font-weight: bold;font-size: 24px;margin-bottom: 10px;}
+
+/** 左边内容 **/
+#website-container>.left{width: 240px;background: #ffffff;float: left;padding: 5px 0px;}
+#website-container>.left ul li .left-nav{width: 220px;line-height: 34px;font-size: 14px;display: block;text-align: left;font-weight: bold;cursor: pointer;padding: 2px 0px 2px 20px}
+#website-container>.left ul li .left-nav:hover{background-color: #f9f9f9;color: #222;}
+#website-container>.left ul li .left-nav.active{color:#1b75bb;background-color: #f9f9f9;}
+#website-container>.left ul li .left-nav.active:hover{color: #1b75bb}
+
+/** 右边内容 **/
+#website-container>.right{width: 660px;background: #ffffff;padding: 20px;float: right;}
