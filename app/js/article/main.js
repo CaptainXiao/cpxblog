@@ -9,7 +9,7 @@ var articleModule = angular.module('articleModule', [])
     .config(['$stateProvider', '$urlRouterProvider', '$httpProvider',
         function ($stateProvider, $urlRouterProvider, $httpProvider) {
             $stateProvider.state('home', router.home);
-            $stateProvider.state('article', router.artcile);
+            $stateProvider.state('article', router.article);
             $stateProvider.state('manage', router.manage);
         }
     ]);

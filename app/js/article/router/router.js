@@ -2,39 +2,27 @@
  * Created by Captain on 3/9/17.
  */
 var homeTemplate = require("html!../templates/home.html");
-var homeController = require("../controllers/homeController");
+var homeController = require("../controllers/home")();
 var articleTemplate = require("html!../templates/article.html");
-var articleController = require("../controllers/articleController");
+var articleController = require("../controllers/article")();
 var manageTemplate = require("html!../templates/manage.html");
-var manageController = require("../controllers/manageController");
+var manageController = require("../controllers/manage")();
 
 module.exports = {
     home: {
         url: '/home',
-        views: {
-            '': {
-                template: homeTemplate,
-                controller: homeController
-            }
-        }
+        template: homeTemplate,
+        controller: homeController
     },
-    artcile: {
+    article: {
         url: '/article',
-        views: {
-            '': {
-                template: articleTemplate,
-                controller: articleController
-            }
-        }
+        template: articleTemplate,
+        controller: articleController
     },
     manage: {
         url: '/manage',
-        views: {
-            '': {
-                template: manageTemplate,
-                controller: manageController
-            }
-        }
+        template: manageTemplate,
+        controller: manageController
     }
 };
 
