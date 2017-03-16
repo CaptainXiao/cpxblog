@@ -17,6 +17,9 @@ require('./article/main');
 angular.module('cpxblog', ['ui.router','ui.bootstrap', 'ngAnimate' , 'topBarModule' ,'leftBarModule', 'articleModule'])
     .config(['$stateProvider', '$urlRouterProvider', '$locationProvider', '$httpProvider',
         function ($stateProvider, $urlRouterProvider, $locationProvider, $httpProvider) {
+
+            console.log($urlRouterProvider);
+
             $urlRouterProvider.otherwise('');
             $httpProvider.interceptors.push('sessionRecoverer');
 
