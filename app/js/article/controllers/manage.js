@@ -5,5 +5,7 @@ var $ = require('jquery');
 
 var manageController = module.exports = function () {
     return ['$scope', '$http', '$state', '$rootScope', function ($scope, $http, $state, $rootScope) {
+
+
     }]
 };

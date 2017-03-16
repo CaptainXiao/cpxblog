@@ -1,0 +1,8 @@
+<div class="container classify-container">
+    <h2 class="title">文章分类</h2>
+    <ul class="list">
+        <li ng-repeat="item in articleList">
+            {{$index+1}}. <a href="">{{item.name}}</a> ({{item.num}})
+        </li>
+    </ul>
+</div>

@@ -10,11 +10,11 @@ ul,li{list-style: none}
 
 /** 左边内容 **/
 #website-container>.left{width: 240px;background: #ffffff;float: left;padding: 5px 0px;box-shadow: 0px 0px 10px #eee;}
-#website-container>.left ul li .left-nav{width: 220px;line-height: 34px;font-size: 14px;display: block;text-align: left;font-weight: bold;cursor: pointer;padding: 2px 0px 2px 20px}
-#website-container>.left ul li .left-nav i{margin-right: 5px;}
-#website-container>.left ul li .left-nav:hover{background-color: #f9f9f9;color: #222;}
-#website-container>.left ul li .left-nav.active{color:#1b75bb;background-color: #f9f9f9;}
-#website-container>.left ul li .left-nav.active:hover{color: #1b75bb}
+#website-container>.left ul.home-nav li .left-nav{width: 220px;line-height: 34px;font-size: 14px;display: block;text-align: left;font-weight: bold;cursor: pointer;padding: 2px 0px 2px 20px}
+#website-container>.left ul.home-nav li .left-nav i{margin-right: 5px;}
+#website-container>.left ul.home-nav li .left-nav:hover{background-color: #f9f9f9;color: #222;}
+#website-container>.left ul.home-nav li .left-nav.active{color:#1b75bb;background-color: #f9f9f9;}
+#website-container>.left ul.home-nav li .left-nav.active:hover{color: #1b75bb}
 
 /** 右边内容 **/
 #website-container>.right{width: 700px;min-height: 200px;float: right;}
@@ -42,3 +42,9 @@ ul,li{list-style: none}
 .home-container>.summary{padding: 10px 0px;font-size: 14px;color:#555;}
 .home-container>.view{font-size: 12px;color: #999;}
 .home-container>.view:hover{color: #555;}
+
+/** 分类 **/
+.classify-container>.title{text-align: center;font-size: 24px;color: #555;}
+.classify-container>.list>li{font-size: 16px;line-height: 32px;color: #999;}
+.classify-container>.list>li>a{font-size: 16px;line-height: 32px;color: #555;}
+.classify-container>.list>li>a:hover{color: #000;text-decoration: underline;}

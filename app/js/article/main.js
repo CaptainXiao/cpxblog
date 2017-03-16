@@ -11,5 +11,6 @@ var articleModule = angular.module('articleModule', [])
             $stateProvider.state('home', router.home);
             $stateProvider.state('article', router.article);
             $stateProvider.state('manage', router.manage);
+            $stateProvider.state('classification', router.classification);
         }
     ]);

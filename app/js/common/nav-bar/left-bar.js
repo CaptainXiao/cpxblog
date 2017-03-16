@@ -18,9 +18,9 @@ angular.module('leftBarModule', []).directive('leftBar', function () {
                     style : "fa fa-fw fa-home"
                 },
                 {
-                    name: "文章",
-                    view : "article",
-                    style : "fa fa-fw fa-archive"
+                    name: "分类",
+                    view : "classification",
+                    style : "fa fa-fw fa-th"
                 },
                 {
                     name: "管理",
@@ -50,6 +50,8 @@ angular.module('leftBarModule', []).directive('leftBar', function () {
                 }
                 event['active'] = true;
             };
+
+
 
         }],
 

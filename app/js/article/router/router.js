@@ -7,6 +7,8 @@ var articleTemplate = require("html!../templates/article.html");
 var articleController = require("../controllers/article")();
 var manageTemplate = require("html!../templates/manage.html");
 var manageController = require("../controllers/manage")();
+var classificationTemplate = require("html!../templates/classification.html");
+var classificationController = require("../controllers/classification")();
 
 module.exports = {
     home: {
@@ -15,7 +17,7 @@ module.exports = {
         controller: homeController
     },
     article: {
-        url: '/article',
+        url: '/article/{id}',
         template: articleTemplate,
         controller: articleController
     },
@@ -23,6 +25,11 @@ module.exports = {
         url: '/manage',
         template: manageTemplate,
         controller: manageController
+    },
+    classification : {
+        url : '/classification',
+        template : classificationTemplate,
+        controller : classificationController
     }
 };
 
