@@ -12,7 +12,7 @@ var classificationController = require("../controllers/classification")();
 
 module.exports = {
     home: {
-        url: '/home',
+        url: 'home',
         template: homeTemplate,
         controller: homeController
     },
